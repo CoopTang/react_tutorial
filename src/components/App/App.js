@@ -2,6 +2,7 @@ import React from 'react';
 import './App.css';
 
 import { Header } from "../Header"
+import { Footer } from '../Footer';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <label for="2">Do laundry</label><br></br>
       <input type="checkbox" id="3" name="dog"></input>
       <label for="3">Walk dog</label><br></br>
+      <Footer />
     </div>
   );
 }
