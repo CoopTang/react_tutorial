@@ -2,11 +2,11 @@ import React from "react"
 
 import "./TodoItem.css"
 
-function TodoItem() {
+function TodoItem(props) {
   return(
     <div className="todo-item">
       <input type="checkbox"></input>
-      <p>This is an item to do</p>
+      <p>{props.task}</p>
     </div>
   )
 }
