@@ -5,14 +5,18 @@ import { Header } from "../Header"
 import { Footer } from '../Footer';
 import { TodoItem } from "../TodoItem"
 
+import todoData from "../../data/todoData"
+
 function App() {
+  const todoItemComponents = todoData.map(item => {
+    return <TodoItem key={item.id} task={item.task} />
+  })
+
   return (
     <div>
       <Header />
       <body className="todo-list">
-        <TodoItem task="do this"/>
-        <TodoItem task="do that"/>
-        <TodoItem task="do nothing"/>
+        {todoItemComponents}
       </body>
       <Footer />
     </div>
