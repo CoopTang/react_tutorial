@@ -10,9 +10,9 @@ function App() {
     <div>
       <Header />
       <body className="todo-list">
-        <TodoItem />
-        <TodoItem />
-        <TodoItem />
+        <TodoItem task="do this"/>
+        <TodoItem task="do that"/>
+        <TodoItem task="do nothing"/>
       </body>
       <Footer />
     </div>
