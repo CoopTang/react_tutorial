@@ -3,17 +3,21 @@ import './App.css';
 
 import { Header } from "../Header"
 import { Footer } from '../Footer';
+import { TodoItem } from "../TodoItem"
+
+import todoData from "../../data/todoData"
 
 function App() {
+  const todoItemComponents = todoData.map(item => {
+    return <TodoItem key={item.id} task={item.task} />
+  })
+
   return (
     <div>
       <Header />
-      <input type="checkbox" id="1" name="groceries"></input>
-      <label for="1">Buy groceries</label><br></br>
-      <input type="checkbox" id="2" name="laundry"></input>
-      <label for="2">Do laundry</label><br></br>
-      <input type="checkbox" id="3" name="dog"></input>
-      <label for="3">Walk dog</label><br></br>
+      <body className="todo-list">
+        {todoItemComponents}
+      </body>
       <Footer />
     </div>
   );
