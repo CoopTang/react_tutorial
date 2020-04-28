@@ -9,7 +9,7 @@ import todoData from "../../data/todoData"
 
 function App() {
   const todoItemComponents = todoData.map(item => {
-    return <TodoItem key={item.id} task={item.task} />
+    return <TodoItem key={item.id} item={item} />
   })
 
   return (
