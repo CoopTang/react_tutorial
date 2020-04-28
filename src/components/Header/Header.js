@@ -2,10 +2,12 @@ import React from "react"
 
 import "./Header.css"
 
-function Header() {
-  return(
-    <header className="navbar">Todo List</header>
-  )
+class Header extends React.Component {
+  render() {
+    return(
+      <header className="navbar">Todo List</header>
+    )
+  }
 }
 
 export default Header
