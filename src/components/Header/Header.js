@@ -1,8 +1,8 @@
-import React from "react"
+import React, { Component } from "react"
 
 import "./Header.css"
 
-class Header extends React.Component {
+class Header extends Component {
   constructor() {
     super()
     this.state = {}

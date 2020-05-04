@@ -1,8 +1,8 @@
-import React from "react"
+import React, { Component } from "react"
 
 import "./TodoItem.css"
 
-class TodoItem extends React.Component {
+class TodoItem extends Component {
   constructor() {
     super()
     this.state = {}
