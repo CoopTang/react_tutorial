@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { Component } from 'react';
 import './App.css';
 
 import { Header } from "../Header"
@@ -7,7 +7,7 @@ import { TodoItem } from "../TodoItem"
 
 import todoData from "../../data/todoData"
 
-class App extends React.Component {
+class App extends Component {
   constructor() {
     super()
     this.state = {}
