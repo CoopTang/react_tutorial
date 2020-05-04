@@ -8,6 +8,10 @@ import { TodoItem } from "../TodoItem"
 import todoData from "../../data/todoData"
 
 class App extends React.Component {
+  constructor() {
+    super()
+    this.state = {}
+  }
 
   render() {
     const todoItemComponents = todoData.map(item => {
