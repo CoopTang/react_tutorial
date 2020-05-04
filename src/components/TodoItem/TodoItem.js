@@ -3,6 +3,10 @@ import React from "react"
 import "./TodoItem.css"
 
 class TodoItem extends React.Component {
+  constructor() {
+    super()
+    this.state = {}
+  }
   
   render() {
     return(
