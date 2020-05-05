@@ -23,13 +23,13 @@ class TodoItem extends Component {
   
   render() {
     return(
-      <div className="todo-item">
+      <label className="todo-item">
         <Checkbox 
           isChecked={this.state.isCompleted}
           onCheckboxChange={this.handleCheckboxChange}
         />
-        <p>{this.state.task}</p>
-      </div>
+        <p className="todo-text">{this.state.task}</p>
+      </label>
     )
   }
 }
