@@ -12,10 +12,10 @@ class TodoItem extends Component {
       task: this.props.item.task
     }
 
-    this.handleCheckboxChange = this.handleCheckboxChange.bind(this)
+    this.handleClick = this.handleClick.bind(this)
   }
 
-  handleCheckboxChange() {
+  handleClick() {
     this.setState(state => ({
       isCompleted: !state.isCompleted
     }))
@@ -23,10 +23,9 @@ class TodoItem extends Component {
   
   render() {
     return(
-      <label className="todo-item" onClick={this.handleCheckboxChange}>
+      <label className="todo-item" onClick={this.handleClick}>
         <Checkbox 
           isChecked={this.state.isCompleted}
-          onCheckboxChange={this.handleCheckboxChange}
         />
         <p className="todo-text">{this.state.task}</p>
       </label>
