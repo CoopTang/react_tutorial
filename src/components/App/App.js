@@ -3,7 +3,7 @@ import './App.css';
 
 import { Header } from "../Header"
 import { Footer } from '../Footer';
-import { TodoItem } from "../TodoItem"
+import { TodoList } from "../TodoList"
 
 import todoData from "../../data/todoData"
 
@@ -14,15 +14,10 @@ class App extends Component {
   }
 
   render() {
-    const todoItemComponents = todoData.map(item => {
-      return <TodoItem key={item.id} item={item} />
-    })
     return (
       <div>
         <Header />
-        <body className="todo-list">
-          {todoItemComponents}
-        </body>
+        <TodoList todoData={todoData} />
         <Footer />
       </div>
     );

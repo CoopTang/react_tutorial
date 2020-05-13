@@ -2,11 +2,12 @@ import React from 'react'
 
 import "./Checkbox.css"
 
-const Checkbox = ({isChecked}) => (
+const Checkbox = (props) => (
   <div className="checkbox-container">
     <input className="checkbox"
       type="checkbox"
-      defaultChecked={isChecked}
+      checked={props.isChecked}
+      readOnly={true}
     />
     <span className="checkmark" />
   </div>
